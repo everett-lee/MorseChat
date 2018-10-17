@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b423980d3de7de5099946018852d0d04/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/lee/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/472da0f7e09853ecca9dbd3e66e4d776/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3291e3346fd0073f8fdc98ef88d4d767/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/e0e32870a547f91a34e17b4f81292c30/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4fa533eff6fc3bff472abc66fb38012d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/625eed66ba48a8abb4caf14b158b4afc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/6d4d3f19fe919e9eb1519d7f023f4beb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/aa53bfe98eef355e8b19166dd2d59c3d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/75cff3106b55bb5de8c11b71efe8c999/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/89738aaf1713e0e459f08b8e44b25516/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/4aa3f01fc566c5d6e0ca8af2c1d391a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/fcda81a436465e797629c47f6fb76a72/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/7ca40c078807bae81444be04d5346f3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d5b4d1317fb07e60198e20542fcf46c6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/3cbe5bc15af7d04221bbb24dc86de049/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/084cdca81755f5e6d803f4f2f166b714/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/64559af52f84236331e1f785dd9ba315/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/99a16ffd9bfbbd0a4b16ef02bebe1ffe/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6957a175f740bbfffa03200f66f41157/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e4dbe2ad64d5b7b89da5ff41ae3bc796/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1cd56fddf2c203361c52dd8e6463c3e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/e143f4fae38f4a6ace73a9bed5b7dd39/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e4795c5695ce11558ae56b9eff21aa68/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/49816b7fb88f875c8cb213fc13fd62e2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/bf3e2da86179f8d04e715e85eacad5a1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8a33d1f5ea12165697d631aa17533ce2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/f089dcbdb15605fc670c57da0fb93855/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/lee/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/472da0f7e09853ecca9dbd3e66e4d776/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/lee/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/472da0f7e09853ecca9dbd3e66e4d776/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/084cdca81755f5e6d803f4f2f166b714/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/084cdca81755f5e6d803f4f2f166b714/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/64559af52f84236331e1f785dd9ba315/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/64559af52f84236331e1f785dd9ba315/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/084cdca81755f5e6d803f4f2f166b714/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.lee.morsechat.MainActivity
+ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b423980d3de7de5099946018852d0d04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b423980d3de7de5099946018852d0d04/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/lee/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/472da0f7e09853ecca9dbd3e66e4d776/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/lee/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/472da0f7e09853ecca9dbd3e66e4d776/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3291e3346fd0073f8fdc98ef88d4d767/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3291e3346fd0073f8fdc98ef88d4d767/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/e0e32870a547f91a34e17b4f81292c30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/e0e32870a547f91a34e17b4f81292c30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4fa533eff6fc3bff472abc66fb38012d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4fa533eff6fc3bff472abc66fb38012d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/625eed66ba48a8abb4caf14b158b4afc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/625eed66ba48a8abb4caf14b158b4afc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/6d4d3f19fe919e9eb1519d7f023f4beb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/6d4d3f19fe919e9eb1519d7f023f4beb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/aa53bfe98eef355e8b19166dd2d59c3d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/aa53bfe98eef355e8b19166dd2d59c3d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/75cff3106b55bb5de8c11b71efe8c999/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/75cff3106b55bb5de8c11b71efe8c999/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/89738aaf1713e0e459f08b8e44b25516/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/89738aaf1713e0e459f08b8e44b25516/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/4aa3f01fc566c5d6e0ca8af2c1d391a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/4aa3f01fc566c5d6e0ca8af2c1d391a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/fcda81a436465e797629c47f6fb76a72/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/fcda81a436465e797629c47f6fb76a72/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/7ca40c078807bae81444be04d5346f3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/7ca40c078807bae81444be04d5346f3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d5b4d1317fb07e60198e20542fcf46c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d5b4d1317fb07e60198e20542fcf46c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/3cbe5bc15af7d04221bbb24dc86de049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/3cbe5bc15af7d04221bbb24dc86de049/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/084cdca81755f5e6d803f4f2f166b714/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/084cdca81755f5e6d803f4f2f166b714/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/64559af52f84236331e1f785dd9ba315/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/64559af52f84236331e1f785dd9ba315/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/99a16ffd9bfbbd0a4b16ef02bebe1ffe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/99a16ffd9bfbbd0a4b16ef02bebe1ffe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6957a175f740bbfffa03200f66f41157/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6957a175f740bbfffa03200f66f41157/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e4dbe2ad64d5b7b89da5ff41ae3bc796/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/e4dbe2ad64d5b7b89da5ff41ae3bc796/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1cd56fddf2c203361c52dd8e6463c3e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1cd56fddf2c203361c52dd8e6463c3e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/e143f4fae38f4a6ace73a9bed5b7dd39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/e143f4fae38f4a6ace73a9bed5b7dd39/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e4795c5695ce11558ae56b9eff21aa68/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e4795c5695ce11558ae56b9eff21aa68/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/49816b7fb88f875c8cb213fc13fd62e2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/49816b7fb88f875c8cb213fc13fd62e2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/bf3e2da86179f8d04e715e85eacad5a1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/bf3e2da86179f8d04e715e85eacad5a1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8a33d1f5ea12165697d631aa17533ce2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/lee/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8a33d1f5ea12165697d631aa17533ce2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/f089dcbdb15605fc670c57da0fb93855/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/lee/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/f089dcbdb15605fc670c57da0fb93855/AndroidManifest.xml:20:5-44
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		ADDED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lee/AndroidStudioProjects/MorseChat/app/src/main/AndroidManifest.xml
