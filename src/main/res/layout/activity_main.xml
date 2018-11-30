@@ -18,25 +18,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hi"
+            android:textSize="20dp"
+            android:paddingBottom="20dp"
             android:id="@+id/englishText"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hi"
+            android:textSize="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal"
             android:id="@+id/morseText"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hi"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
             android:id="@+id/currentWordText"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hi"
-            android:id="@+id/currentLetterText"/>
 
     </LinearLayout>
 
@@ -45,11 +48,11 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:layout_weight="4.4">
+        android:layout_weight="3">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="match_parent"
             android:src="@drawable/morsetree" />
 
     </LinearLayout>
@@ -57,17 +60,17 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="4.8"
+        android:layout_weight="5"
         android:orientation="horizontal"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
         android:paddingBottom="5dp"
-        android:paddingTop="10dp">
+        android:layout_marginBottom="10dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/codebutton"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:id="@+id/morseButton"/>
@@ -76,9 +79,25 @@
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:background="@drawable/sendbutton"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/cancelButton"
+            android:text="Delete Word"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            android:textColor="@color/white"/>
 
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sendbutton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/sendButton"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            android:textColor="@color/white"/>
 
     </RelativeLayout>
 
