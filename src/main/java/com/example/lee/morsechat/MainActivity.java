@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
     private CountDownTimer sentenceTimer;
     private CountDownTimer wordTimer;
+    private AudioPlayer audioPlayer;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         CountDownTimer wordTimer = null;
         setListeners();
 
-        Helper.initSounds(this);
+        audioPlayer = new AudioPlayer();
 
     }
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     // update current letter on dot
     private void dotClick() {
-        Helper.playBeep(this, 0);
+        audioPlayer.play(this, R.raw.shortbeep);
         char returnChar = morseTree.traverseTreeDot();
         currentLetter = returnChar;
         currentWordText.setText(currentWord + String.valueOf(returnChar));
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     // update current letter on dash
     private void dashClick() {
-        Helper.playBeep(this, 1);
+        audioPlayer.play(this, R.raw.longbeep);
         char returnChar = morseTree.traverseTreeDash();
         currentLetter = returnChar;
         currentWordText.setText(currentWord + String.valueOf(returnChar));

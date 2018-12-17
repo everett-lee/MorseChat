@@ -19,5 +19,4 @@ public class Reader {
 
         return input.charAt(0);
     }
-
 }

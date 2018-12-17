@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 public class MorseCode {
     private Map<String, Character> translateCode;
     private List<String> codeStrings;
