@@ -53,7 +53,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/morsetree" />
+            android:src= "@drawable/mt_0_90"
+            android:id="@+id/morseTreeImage"/>
 
     </LinearLayout>
 
