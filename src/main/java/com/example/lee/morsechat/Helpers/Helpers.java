@@ -1,13 +1,10 @@
 package com.example.lee.morsechat.Helpers;
 
+import android.content.Context;
 import android.widget.ImageView;
-
 import com.example.lee.morsechat.R;
-
 import java.util.HashMap;
 import java.util.List;
-
-import static android.support.v4.graphics.drawable.IconCompat.getResources;
 
 public class Helpers {
 
@@ -50,8 +47,6 @@ public class Helpers {
         imageMap.put('Y', "@drawable/mt_y");
     }
 
-
-
     public String concatenateList(List<String> wordList) {
         String outString = "";
 
@@ -63,15 +58,12 @@ public class Helpers {
         return outString;
     }
 
-    public String charToPic(char character, ImageView view) {
+    public void charToPic(char character, ImageView view, Context context) {
         String retStr = imageMap.get(character);
-        int id = getResources().getIdentifier(retStr, "drawable", this);
-
+        int id = context.getResources().getIdentifier(retStr, "drawable",context.getPackageName());
         view.setBackgroundResource(R.drawable.mt_a);
 
     }
-
-
 
 }
 

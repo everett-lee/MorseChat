@@ -121,31 +121,4 @@ public class BinaryTree {
         return liveNode.getValue();
     }
 
-    public void printTree() {
-        List<Node> queue = new ArrayList<>();
-        queue.add(this.root);
-        queue.add(new Node('$'));
-
-        while (queue.size() > 0) {
-            Node current = queue.get(0);
-            // delimiter symbol to separate tree levels
-            if (current.getValue() == '$') {
-                if (queue.get(queue.size() - 1).getValue() != '$') {
-                    queue.add(new Node('$'));
-                    System.out.println("  ");
-                }
-            } else {
-                System.out.print(current.getValue() + " ");
-
-                if (current.getLeftChild() != null) {
-                    queue.add(current.getLeftChild());
-                }
-                if (current.getRightChild() != null) {
-                    queue.add(current.getRightChild());
-                }
-
-            }
-            queue.remove(current);
-        }
-    }
 }
