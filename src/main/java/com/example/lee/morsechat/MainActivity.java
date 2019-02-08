@@ -1,4 +1,5 @@
 package com.example.lee.morsechat;
+
 import com.example.lee.morsechat.BinaryTree.*;
 import com.example.lee.morsechat.Helpers.*;
 
@@ -130,59 +131,48 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setListeners() {
-        morseButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // start a new timer for sentence concatenation if none exists, or cancel previous timer and create a new one
-                if (sentenceTimer == null) {
-                    sentenceTimer = createSentenceTimer();
-                } else {
-                    sentenceTimer.cancel();
-                    sentenceTimer = createSentenceTimer();
-                }
-
-                // start a new timer for letter concatenation if none exists, or cancel previous timer and create a new one
-                if (wordTimer == null) {
-                    wordTimer = createLetterTimer();
-                } else {
-                    wordTimer.cancel();
-                    wordTimer = createLetterTimer();
-                }
-
-                dotClick();
+        morseButton.setOnClickListener((View v) ->
+        {
+            // start a new timer for sentence concatenation if none exists, or cancel previous timer and create a new one
+            if (sentenceTimer == null) {
+                sentenceTimer = createSentenceTimer();
+            } else {
+                sentenceTimer.cancel();
+                sentenceTimer = createSentenceTimer();
             }
+            // start a new timer for letter concatenation if none exists, or cancel previous timer and create a new one
+            if (wordTimer == null) {
+                wordTimer = createLetterTimer();
+            } else {
+                wordTimer.cancel();
+                wordTimer = createLetterTimer();
+            }
+
+            dotClick();
         });
 
-        morseButton.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-
-                if (sentenceTimer == null) {
-                    sentenceTimer = createSentenceTimer();
-                } else {
-                    sentenceTimer.cancel();
-                    sentenceTimer = createSentenceTimer();
-                }
-
-                if (wordTimer == null) {
-                    wordTimer = createLetterTimer();
-                } else {
-                    wordTimer.cancel();
-                    wordTimer = createLetterTimer();
-                }
-
-                dashClick();
-                return true;
+        morseButton.setOnLongClickListener((View v) ->
+        {
+            if (sentenceTimer == null) {
+                sentenceTimer = createSentenceTimer();
+            } else {
+                sentenceTimer.cancel();
+                sentenceTimer = createSentenceTimer();
             }
+
+            if (wordTimer == null) {
+                wordTimer = createLetterTimer();
+            } else {
+                wordTimer.cancel();
+                wordTimer = createLetterTimer();
+            }
+
+            dashClick();
+            return true;
         });
 
-        cancelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deleteLastWord();
-            }
-        });
+        cancelButton.setOnClickListener((View v) ->
+                deleteLastWord());
     }
 
     // removes last item in the array of words and Morse Code

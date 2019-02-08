@@ -1,6 +1,5 @@
 package com.example.lee.morsechat.BinaryTree;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTree {

@@ -2,7 +2,9 @@ package com.example.lee.morsechat.Helpers;
 
 import android.content.Context;
 import android.widget.ImageView;
+
 import com.example.lee.morsechat.R;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -60,10 +62,8 @@ public class Helpers {
 
     public void charToPic(char character, ImageView view, Context context) {
         String retStr = imageMap.get(character);
-        int id = context.getResources().getIdentifier(retStr, "drawable",context.getPackageName());
+        int id = context.getResources().getIdentifier(retStr, "drawable", context.getPackageName());
         view.setBackgroundResource(R.drawable.mt_a);
-
     }
-
 }
 
