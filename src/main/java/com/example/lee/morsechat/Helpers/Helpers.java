@@ -8,11 +8,11 @@ import com.example.lee.morsechat.R;
 import java.util.HashMap;
 import java.util.List;
 
-public class Helpers {
+public interface Helpers {
 
-    private HashMap<Character, String> imageMap;
+    HashMap<Character, String> imageMap = new HashMap<>();
 
-    public void Helpers() {
+    static void Helpers() {
         imageMap.put('0', "@drawable/mt_0");
         imageMap.put('1', "@drawable/mt_1");
         imageMap.put('2', "@drawable/mt_2");
@@ -49,7 +49,7 @@ public class Helpers {
         imageMap.put('Y', "@drawable/mt_y");
     }
 
-    public String concatenateList(List<String> wordList) {
+    public static String concatenateList(List<String> wordList) {
         String outString = "";
 
         for (int i = 0; i < wordList.size() - 1; i++) {
@@ -60,7 +60,7 @@ public class Helpers {
         return outString;
     }
 
-    public void charToPic(char character, ImageView view, Context context) {
+    public static void charToPic(char character, ImageView view, Context context) {
         String retStr = imageMap.get(character);
         int id = context.getResources().getIdentifier(retStr, "drawable", context.getPackageName());
         view.setBackgroundResource(R.drawable.mt_a);

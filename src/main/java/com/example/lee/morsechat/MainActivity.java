@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView currentWordText;
 
     private MorseCode morseCode;
-    private BinaryTree morseTree;
-    private Helpers Helper;
 
     private List<String> codeStrings;
     private List<String> sentenceArray;
@@ -54,11 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         // create and initialise binary tree / current node to root
         morseCode = new MorseCode();
-        morseTree = new BinaryTree();
         codeStrings = morseCode.getCodeStrings();
-        morseTree.buildTree(codeStrings);
-
-        Helper = new Helpers();
+        BinaryTree.getInstance().buildTree(codeStrings);
 
         // create button variables
         morseButton = (Button) findViewById(R.id.morseButton);
@@ -87,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     // update current letter on dot
     private void dotClick() {
         audioPlayer.play(this, R.raw.shortbeep);
-        char returnChar = morseTree.traverseTreeDot();
+        char returnChar = BinaryTree.getInstance().traverseTreeDot();
         currentLetter = returnChar;
         currentWordText.setText(currentWord + String.valueOf(returnChar));
 
@@ -98,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     // update current letter on dash
     private void dashClick() {
         audioPlayer.play(this, R.raw.longbeep);
-        char returnChar = morseTree.traverseTreeDash();
+        char returnChar = BinaryTree.getInstance().traverseTreeDash();
         currentLetter = returnChar;
         currentWordText.setText(currentWord + String.valueOf(returnChar));
 
@@ -110,12 +105,12 @@ public class MainActivity extends AppCompatActivity {
         // add current word to array and reset it
         sentenceArray.add(currentWord);
         currentWord = "";
-        englishText.setText(Helper.concatenateList(sentenceArray));
+        englishText.setText(Helpers.concatenateList(sentenceArray));
         currentWordText.setText("");
 
         // add Morse Code for current word to array and reset it
         morseCodeArray.add(morseCodeWord);
-        morseText.setText(Helper.concatenateList(morseCodeArray));
+        morseText.setText(Helpers.concatenateList(morseCodeArray));
         morseCodeWord = "";
     }
 
@@ -126,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         morseCodeWord += runningMorseCodeLetter;
 
         // reset node to the root
-        morseTree.reset();
+        BinaryTree.getInstance().reset();
         runningMorseCodeLetter = "";
     }
 
@@ -182,8 +177,8 @@ public class MainActivity extends AppCompatActivity {
             morseCodeArray.remove(morseCodeArray.size() - 1);
         }
         if (sentenceArray.size() > 0) {
-            englishText.setText(Helper.concatenateList(sentenceArray));
-            morseText.setText(Helper.concatenateList(morseCodeArray));
+            englishText.setText(Helpers.concatenateList(sentenceArray));
+            morseText.setText(Helpers.concatenateList(morseCodeArray));
         } else {
             englishText.setText("");
             morseText.setText("");

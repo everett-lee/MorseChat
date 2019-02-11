@@ -4,35 +4,44 @@ import java.util.List;
 
 public class BinaryTree {
 
-    private Node root;
-    private MorseCode translator;
-    private Reader reader;
-    private Node liveNode;
+    private static BinaryTree instance;
+    private static Node root;
+    private static MorseCode translator;
+    private static Reader reader;
+    private static Node liveNode;
 
-    public BinaryTree() {
+    static {
+        instance = new BinaryTree();
+    }
+
+    private BinaryTree() {
         this.root = new Node('\u0000');
         this.translator = new MorseCode();
         this.reader = new Reader();
         this.liveNode = this.root;
     }
 
-    public Node getRoot() {
-        return this.root;
+    public static BinaryTree getInstance() {
+        return instance;
     }
 
-    public void reset() {
-        liveNode = this.root;
+    public static Node getRoot() {
+        return root;
     }
 
-    public void buildTree(List<String> morseCode) {
+    public static void reset() {
+        liveNode = root;
+    }
+
+    public static void buildTree(List<String> morseCode) {
         for (String codeString : morseCode) {
             insertNodes(codeString);
         }
     }
 
-    public void insertNodes(String codeString) {
+    public static void insertNodes(String codeString) {
         char value = translator.translate(codeString);
-        Node currentNode = this.root;
+        Node currentNode = root;
 
         for (char codeChar : codeString.toCharArray()) {
             if (codeChar == '.') {
@@ -56,18 +65,18 @@ public class BinaryTree {
     }
 
 
-    public char treeTranslate(String codeString) {
+    public static char treeTranslate(String codeString) {
         if (codeString.isEmpty()) {
             return '\u0000';
         }
 
-        Node currentNode = this.root;
+        Node currentNode = root;
 
-        for (char codeChar: codeString.toCharArray()) {
+        for (char codeChar : codeString.toCharArray()) {
             currentNode = getNextNode(codeChar, currentNode);
 
             // return if search extends beyond tree
-            if (currentNode == this.root) {
+            if (currentNode == root) {
                 return '\u0000';
             }
         }
@@ -76,16 +85,16 @@ public class BinaryTree {
 
     }
 
-    public void printNodeValue() {
+    public static void printNodeValue() {
         char codeChar = reader.getInput();
-        Node currentNode = getNextNode(codeChar, this.root);
+        Node currentNode = getNextNode(codeChar, root);
         System.out.println(currentNode.getValue());
 
         while (true) {
             codeChar = reader.getInput();
 
             // break if empty string entered or search extends beyond tree
-            if (codeChar == '\u0000' || currentNode == this.root) {
+            if (codeChar == '\u0000' || currentNode == root) {
                 break;
             }
             currentNode = getNextNode(codeChar, currentNode);
@@ -93,29 +102,29 @@ public class BinaryTree {
         }
     }
 
-    public Node getNextNode(char codeChar, Node currentNode) {
+    public static Node getNextNode(char codeChar, Node currentNode) {
         if (codeChar == '.') {
             if (currentNode.getLeftChild() != null) {
                 currentNode = currentNode.getLeftChild();
             } else {
-                return this.root;
+                return root;
             }
         } else {
             if (currentNode.getRightChild() != null) {
                 currentNode = currentNode.getRightChild();
             } else {
-                return this.root;
+                return root;
             }
         }
         return currentNode;
     }
 
-    public Character traverseTreeDot() {
+    public static Character traverseTreeDot() {
         liveNode = getNextNode('.', liveNode);
         return liveNode.getValue();
     }
 
-    public Character traverseTreeDash() {
+    public static Character traverseTreeDash() {
         liveNode = getNextNode('-', liveNode);
         return liveNode.getValue();
     }
