@@ -6,14 +6,14 @@ import com.example.lee.morsechat.Helpers.*;
 import com.example.lee.morsechat.WordContainers.EnglishWordContainer;
 import com.example.lee.morsechat.WordContainers.MorseCodeWordContainer;
 
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
+
+import ListenerContainer.ListenerContainer;
 
 public class MainActivity extends AppCompatActivity {
     private Button morseButton;
@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
     private List<String> codeStrings;
 
-    private CountDownTimer sentenceTimer;
-    private CountDownTimer wordTimer;
     private AudioPlayer audioPlayer;
     private ClickHandler clickHandler;
 
     private EnglishWordContainer englishWordContainer;
     private MorseCodeWordContainer morseCodeWordContainer;
     private TextUpdater textUpdater;
+    private ListenerContainer listenerContainer;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,89 +53,13 @@ public class MainActivity extends AppCompatActivity {
         morseText = (TextView) findViewById(R.id.morseText);
         currentWordText = (TextView) findViewById(R.id.currentWordText);
 
-        CountDownTimer sentenceTimer = null;
-        CountDownTimer wordTimer = null;
-        setListeners();
-
         englishWordContainer = new EnglishWordContainer();
         morseCodeWordContainer = new MorseCodeWordContainer();
         audioPlayer = new AudioPlayer();
         clickHandler = new ClickHandler(englishWordContainer, morseCodeWordContainer, audioPlayer);
         textUpdater = new TextUpdater(englishWordContainer, morseCodeWordContainer);
-    }
-    
-    private void setListeners() {
-        morseButton.setOnClickListener((View v) ->
-        {
-            // start a new timer for sentence concatenation if none exists, or cancel previous timer and create a new one
-            if (sentenceTimer == null) {
-                sentenceTimer = createSentenceTimer();
-            } else {
-                sentenceTimer.cancel();
-                sentenceTimer = createSentenceTimer();
-            }
-            // start a new timer for letter concatenation if none exists, or cancel previous timer and create a new one
-            if (wordTimer == null) {
-                wordTimer = createLetterTimer();
-            } else {
-                wordTimer.cancel();
-                wordTimer = createLetterTimer();
-            }
 
-            clickHandler.dotClick(currentWordText, this);
-        });
-
-        morseButton.setOnLongClickListener((View v) ->
-        {
-            if (sentenceTimer == null) {
-                sentenceTimer = createSentenceTimer();
-            } else {
-                sentenceTimer.cancel();
-                sentenceTimer = createSentenceTimer();
-            }
-
-            if (wordTimer == null) {
-                wordTimer = createLetterTimer();
-            } else {
-                wordTimer.cancel();
-                wordTimer = createLetterTimer();
-            }
-
-            clickHandler.dashClick(currentWordText, this);
-            return true;
-        });
-
-        cancelButton.setOnClickListener((View v) ->
-                textUpdater.deleteLastWord(englishText, morseText));
-    }
-
-    private CountDownTimer createSentenceTimer() {
-        CountDownTimer timer = new CountDownTimer(3500, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                ;
-            }
-
-            public void onFinish() {
-                textUpdater.appendToSentence(englishText, currentWordText, morseText);
-            }
-        }.start();
-
-        return timer;
-    }
-
-    private CountDownTimer createLetterTimer() {
-        CountDownTimer timer = new CountDownTimer(2000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                ;
-            }
-
-            public void onFinish() {
-                textUpdater.appendToWord(currentWordText);
-            }
-        }.start();
-
-        return timer;
+        listenerContainer = new ListenerContainer(morseButton, cancelButton, clickHandler, textUpdater);
+        listenerContainer.setListeners(englishText, currentWordText, morseText, this);
     }
 }
