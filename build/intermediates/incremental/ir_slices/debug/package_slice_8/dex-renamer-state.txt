@@ -1,4 +1,4 @@
-#Thu Oct 11 22:35:20 BST 2018
-base.0=/home/lee/AndroidStudioProjects/MorseChat/app/build/intermediates/transforms/dexMerger/debug/8
+#Mon Feb 11 21:47:01 GMT 2019
+base.0=/home/lee/AndroidStudioProjects/MorseChat/app/build/intermediates/transforms/dexMerger/debug/27
 path.0=classes.dex
 renamed.0=classes.dex
