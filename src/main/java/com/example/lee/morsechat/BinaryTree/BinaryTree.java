@@ -85,23 +85,6 @@ public class BinaryTree {
 
     }
 
-    public static void printNodeValue() {
-        char codeChar = reader.getInput();
-        Node currentNode = getNextNode(codeChar, root);
-        System.out.println(currentNode.getValue());
-
-        while (true) {
-            codeChar = reader.getInput();
-
-            // break if empty string entered or search extends beyond tree
-            if (codeChar == '\u0000' || currentNode == root) {
-                break;
-            }
-            currentNode = getNextNode(codeChar, currentNode);
-            System.out.println(currentNode.getValue());
-        }
-    }
-
     public static Node getNextNode(char codeChar, Node currentNode) {
         if (codeChar == '.') {
             if (currentNode.getLeftChild() != null) {
